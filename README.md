@@ -4,7 +4,7 @@
 Projeto completo de Business Intelligence e Análise de Dados focado em mapear o pipeline de vendas globais da BMW (2014-2024). O objetivo principal foi realizar a extração e o tratamento de dados brutos utilizando Python e SQL, gerando um modelo estruturado para consumo no Power BI. O dashboard final avalia os fatores de influência na compra de veículos, com destaque para o impacto da transição energética (preferências por veículos elétricos, híbridos e a combustão).
 
 ## 📊 Visualização do Dashboard
-![Dashboard Preview](dashboardBMW.jpg)
+![Dashboard Preview](dashboardBMW.png)
 
 ## 🛠️ Tecnologias Utilizadas
 * **Python (Pandas):** Limpeza de dados, formatação de datas, remoção de duplicatas e engenharia de features (cálculo de faturamento total).
