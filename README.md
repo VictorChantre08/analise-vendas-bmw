@@ -1,27 +1,25 @@
-# 🚗 Análise Global de Vendas - BMW
+# 🚗 Análise Global de Vendas e Influência Energética - BMW
 
 ## 📌 Visão Geral
-Projeto de Análise de Dados focado no pipeline de vendas globais da BMW. O objetivo principal do projeto foi realizar a extração, o tratamento e a análise de faturamento utilizando Python e SQL, gerando uma base limpa e estruturada pronta para consumo no Power BI.
+Projeto completo de Business Intelligence e Análise de Dados focado em mapear o pipeline de vendas globais da BMW (2014-2024). O objetivo principal foi realizar a extração e o tratamento de dados brutos utilizando Python e SQL, gerando um modelo estruturado para consumo no Power BI. O dashboard final avalia os fatores de influência na compra de veículos, com destaque para o impacto da transição energética (preferências por veículos elétricos, híbridos e a combustão).
+
+## 📊 Visualização do Dashboard
+![Dashboard Preview](dashboardBMW.jpg)
 
 ## 🛠️ Tecnologias Utilizadas
-* **Python (Pandas):** Limpeza, formatação de datas, remoção de duplicatas e cálculo de faturamento (ETL).
-* **SQLite3:** Banco de dados em memória para execução de queries relacionais.
-* **SQL:** Agrupamento e ordenação de dados de vendas.
+* **Python (Pandas):** Limpeza de dados, formatação de datas, remoção de duplicatas e engenharia de features (cálculo de faturamento total).
+* **SQLite3 & SQL:** Banco de dados em memória para integração, modelagem estruturada e consultas de agregação.
+* **Power BI:** Construção do relatório visual, modelagem de dados e criação de medidas DAX.
 
-## ⚙️ Arquitetura do Código
-1. **Tratamento de Dados:**
-   - Leitura da base original `bmw_global_sales_dataset.csv`.
-   - Conversão das colunas de ano e mês para formato `datetime`.
-   - Criação da métrica de Faturamento Total (`total_revenue_usd`) multiplicando o preço pelas unidades vendidas.
-   - Exportação da base tratada para `bmw_sales_cleaned.csv`.
-2. **Análise de Negócio:**
-   - Criação de conexão em memória com `sqlite3`.
-   - Construção de query SQL agregando unidades vendidas, faturamento total e preço médio por País e Modelo.
-   - Extração do **Top 10 Vendas** focado em maior faturamento.
+## ⚙️ Principais Funcionalidades e KPIs
+* **Cartões de KPI Avançados:** Acompanhamento de Receita Total ($47.97bn), Unidades Vendidas (633K) e Variação YoY (+12.04%).
+* **Análise de Influência Energética:** Gráfico de rosca detalhando a distribuição de vendas por tipo de motor (Electric 26.96%, Hybrid 25.21%, Diesel 24.89%, Petrol 22.94%).
+* **Top Performers:** Ranking interativo dos modelos que mais geram receita (X3, i4, 3 Series, etc.).
+* **Filtros Dinâmicos:** Segmentação de dados rápida por país (via menu lateral de bandeiras) e recortes temporais (2014 a 2024).
 
-## 🚀 Como Executar
+## 🚀 Como Executar o ETL
 1. Clone este repositório.
 2. Certifique-se de ter a biblioteca `pandas` instalada (`pip install pandas`).
-3. Adicione o arquivo de dados original `bmw_global_sales_dataset.csv` na raiz do projeto.
+3. Adicione o arquivo de dados original `bmw_global_sales_dataset.csv` na raiz do projeto (não incluso no repositório por questões de tamanho/versionamento).
 4. Execute o script principal: `python etl_bmw_sales.py`.
-5. O terminal exibirá o Top 10 de vendas por país e modelo, e o arquivo limpo será gerado automaticamente.
+5. O terminal exibirá o Top 10 de vendas e o arquivo limpo `bmw_sales_cleaned.csv` será gerado automaticamente para uso no Power BI.
