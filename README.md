@@ -1,5 +1,9 @@
 # 🚗 Análise Global de Vendas e Influência Energética - BMW
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-CC292B?style=for-the-badge&logo=sqlite&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+
 ## 📌 Visão Geral
 Projeto completo de Business Intelligence e Análise de Dados focado em mapear o pipeline de vendas globais da BMW (2014-2024). O objetivo principal foi realizar a extração e o tratamento de dados brutos utilizando Python e SQL, gerando um modelo estruturado para consumo no Power BI. O dashboard final avalia os fatores de influência na compra de veículos, com destaque para o impacto da transição energética (preferências por veículos elétricos, híbridos e a combustão).
 
